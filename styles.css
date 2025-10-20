@@ -1,0 +1,753 @@
+/* --- Variáveis de Cor ATUALIZADAS (MANUTENÇÃO) --- */
+:root {
+    --dark-blue: #1A264F;        /* Fundo principal da home, CTA Cursos */
+    --accent-yellow: #FFC700;    /* Amarelo/Dourado (Shine) */
+    --accent-purple: #7B4397;    /* Roxo (Círculo Admission) */
+    --accent-purple2: #6a1b9a;   /* Speak Roxo mais escuro */
+    --red-cta: #E03B4C;          /* Vermelho/Rosa (Botões CTA, Barra Social) */
+    --light-bg: #F9F9F9;         /* Fundo dos cards de Cursos (Quase branco) */
+    --link-gray: #A9B3D8;        /* Cor dos links na navbar DARK (Home) */
+    --logo-light-text: #E5E0F2;  /* Roxo/Lilás muito claro para o texto "Speak" */
+    --text-dark: #333333;        
+    --text-white: #ffffff;
+}
+.speak-text{
+    color: var(--accent-purple2);
+}
+
+/* --- Reset e Tipografia Básica --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* --- ESTILO GERAL DA NAVBAR --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    font-weight: 500;
+}
+
+.logo-link {
+    text-decoration: none;
+    color: inherit; 
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* --- ESTILOS DA NAVBAR NA HOME (ESCURO) --- */
+.main-wrapper .navbar {
+    color: var(--logo-light-text); 
+    background-color: var(--dark-blue);
+    z-index: 100;
+}
+
+.main-wrapper .logo-star {
+    color: var(--accent-yellow);
+    margin-right: 5px;
+}
+
+.main-wrapper .shine {
+    color: var(--accent-yellow);
+    margin-left: 3px;
+}
+
+.main-wrapper .nav-links a {
+    color: var(--link-gray); 
+}
+
+.auth-buttons {
+    display: flex;
+    align-items: center;
+    background-color: #016EAB; 
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.user-icon {
+    font-size: 1.5em;
+    padding: 10px 15px;
+    background-color: #01568A; 
+}
+
+.btn-signup {
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+/* --- ESTILOS DA NAVBAR EM CURSOS (CLARO) --- */
+.navbar-light {
+    background-color: var(--text-white);
+    color: var(--text-dark);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo-star-dark {
+    color: var(--accent-yellow);
+    margin-right: 5px;
+}
+
+.shine-dark {
+    color: var(--accent-yellow);
+    margin-left: 3px;
+}
+
+.navbar-light .nav-links a {
+    color: var(--text-dark);
+}
+
+.navbar-light .nav-links a.active-link {
+    color: var(--red-cta);
+    border-bottom: 2px solid var(--red-cta);
+    padding-bottom: 5px;
+}
+
+.btn-sign-up-outline {
+    color: var(--text-dark);
+    padding: 8px 15px;
+    margin-right: 10px;
+}
+
+.btn-login-dark {
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* --- ESTILOS DA LANDING PAGE (index.html) --- */
+.main-wrapper {
+    background-color: var(--dark-blue);
+    min-height: 100vh;
+    color: var(--text-white);
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Hero Section */
+.hero-section {
+    max-width: 1200px;
+    margin: 80px auto 0;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 40px;
+    position: relative;
+    padding-top: 50px;
+}
+
+.hero-content {
+    z-index: 5;
+    padding-top: 20px;
+}
+
+.unlock-potential {
+    color: var(--accent-yellow);
+    font-weight: 600;
+    font-size: 1.1em;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.red-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--red-cta);
+    border-radius: 2px;
+}
+
+.hero-content h1 {
+    font-size: 4.5em;
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.shine-text {
+    color: var(--accent-yellow);
+}
+
+.lorem-text {
+    color: var(--link-gray); 
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 450px;
+}
+
+.join-btn {
+    background-color: var(--red-cta);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.dot-icon {
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-white);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.dots-indicator span {
+    background-color: var(--link-gray); 
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+    opacity: 0.5;
+    margin-top: 30px;
+}
+.dots-indicator span:first-child {
+    background-color: var(--red-cta);
+    opacity: 1;
+}
+
+/* --- Barra Lateral Social --- */
+.social-sidebar {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--red-cta);
+    padding: 10px 5px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.social-icon {
+    color: var(--text-white);
+    font-size: 1.2em;
+    padding: 10px 12px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.social-sidebar .social-icon:nth-child(2) { 
+    background-color: #A03241;
+}
+
+/* --- Gráficos e Imagem Direita --- */
+.hero-graphics-container {
+    position: relative;
+    height: 550px; 
+}
+
+.student-image-area {
+    background: url('https://errejotanoticias.com.br/wp-content/uploads/2021/08/dia-do-estudante.jpg') center center/cover no-repeat;
+    background-color: #ccc; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 85%; 
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 5;
+}
+
+/* Elementos Gráficos Flutuantes */
+.admission-cta, .speech-bubble, .uk-flag-circle, .paper-plane-graphic, .star-graphic {
+    /* Define todos os elementos gráficos flutuantes para desktop/tablet */
+    z-index: 10;
+}
+
+.admission-cta {
+    background-color: var(--accent-purple);
+    color: var(--text-white);
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: center;
+    padding: 30px;
+    border-radius: 50%;
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.1;
+    position: absolute;
+    bottom: 50px; 
+    left: 100px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.admission-cta p:first-child {
+    font-weight: 500;
+}
+
+.speech-bubble {
+    background-color: var(--red-cta);
+    color: var(--text-white);
+    font-size: 1.2em;
+    font-weight: 800;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 15px 15px 15px 0; 
+    line-height: 1.2;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.uk-flag-circle {
+    background-color: var(--text-white);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: 5px solid #003F87; 
+    font-size: 2em;
+    transform: rotate(45deg); 
+}
+
+.paper-plane-graphic {
+    color: var(--accent-yellow);
+    font-size: 2em;
+    position: absolute;
+    bottom: 20px;
+    right: 350px; 
+    transform: rotate(-45deg);
+}
+
+.star-graphic {
+    color: var(--accent-yellow);
+    font-size: 3em;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    opacity: 0.15;
+    z-index: 1;
+    transform: rotate(20deg);
+}
+
+.main-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 120%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 50%, rgba(255, 255, 255, 0.05) 5%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.05) 5%, transparent 20%);
+    opacity: 0.8;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* --- ESTILOS DA PÁGINA DE CURSOS (courses.html) --- */
+
+.courses-page {
+    background-color: var(--text-white);
+    color: var(--text-dark);
+}
+
+/* Hero Section */
+.courses-hero-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 40px;
+    text-align: center;
+    position: relative;
+    background: 
+        radial-gradient(circle at 80% 10%, rgba(135, 206, 250, 0.1) 1%, transparent 30%), 
+        radial-gradient(circle at 10% 80%, rgba(255, 199, 0, 0.05) 1%, transparent 20%);
+    background-repeat: no-repeat;
+    padding-bottom: 80px;
+}
+
+.hero-title {
+    font-size: 3.5em;
+    font-weight: 800;
+    color: var(--dark-blue);
+}
+
+.accent-yellow-text {
+    color: var(--accent-yellow);
+}
+
+.hero-subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Grid de Cursos */
+.courses-grid-section {
+    max-width: 1100px;
+    margin: 0px auto 80px;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.course-card {
+    background-color: var(--light-bg); 
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: var(--text-white);
+}
+
+/* Cores dos Ícones */
+.primary-icon { background-color: var(--accent-yellow); }
+.secondary-icon { background-color: var(--dark-blue); }
+.tertiary-icon { background-color: var(--red-cta); }
+.quaternary-icon { background-color: var(--accent-purple); }
+
+.course-card h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1; 
+}
+
+.btn-saiba-mais {
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: var(--accent-yellow);
+    color: var(--dark-blue);
+}
+
+
+/* Por que a Speak & Shine? */
+.why-us-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    text-align: center;
+}
+
+.why-us-section h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--dark-blue);
+    margin-bottom: 40px;
+}
+
+.reasons-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.reason-item {
+    text-align: center;
+    max-width: 200px;
+}
+
+.reason-icon {
+    font-size: 2.5em;
+    color: var(--accent-yellow);
+    margin-bottom: 10px;
+}
+
+.reason-item h4 {
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* CTA Bottom */
+.cta-bottom-section {
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+.cta-content-box {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 15px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 10px 10px;
+}
+
+.cta-content-box h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.btn-matricule-se {
+    background-color: var(--accent-yellow);
+    color: var(--dark-blue);
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1em;
+    box-shadow: 0 4px 10px rgba(255, 199, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+.btn-matricule-se:hover {
+    background-color: #ffd84d; 
+}
+
+/* Rodapé */
+.footer-note {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 0.75em;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==============================================
+--- OTIMIZAÇÕES DE RESPONSIVIDADE MOBILE --- 
+==============================================
+*/
+
+/* --- Telas Médias (Tablets e landscape) --- */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 20px;
+    }
+    
+    /* LANDING PAGE RESPONSIVA */
+    .hero-section {
+        grid-template-columns: 1fr; 
+        padding: 0 30px; /* Ajusta o padding para telas médias */
+    }
+    
+    .hero-content h1 {
+        font-size: 3.5em; /* Reduz um pouco o título principal */
+    }
+    
+    .hero-graphics-container {
+        height: 400px;
+        margin-top: 50px;
+    }
+    
+    .social-sidebar {
+        display: none; /* Barra social some no mobile/tablet */
+    }
+
+    /* CURSOS RESPONSIVOS */
+    .courses-grid-section {
+        grid-template-columns: 1fr; /* 1 coluna no tablet em modo retrato para melhor visualização */
+        max-width: 600px;
+    }
+    
+    .course-card {
+        padding: 30px; /* Reduz um pouco o padding dos cards */
+    }
+    
+    .hero-title {
+        font-size: 3em;
+    }
+    
+    .reasons-container {
+        gap: 30px; /* Reduz o espaço entre os motivos */
+        flex-wrap: wrap; /* Permite quebrar linha se necessário */
+    }
+}
+
+/* --- Telas Pequenas (Celulares, max 600px) --- */
+@media (max-width: 600px) {
+    
+    .navbar {
+        padding: 15px 20px; /* Mais compacto */
+    }
+
+    /* OTIMIZAÇÃO DA NAVBAR */
+    .navbar .nav-links {
+        display: none; 
+    }
+    
+    .logo {
+        font-size: 1.3em; /* Logo um pouco menor */
+    }
+
+    .auth-buttons {
+        transform: none; /* Remove a escala, vamos ajustar via padding/margin */
+    }
+    
+    .btn-signup {
+        padding: 8px 15px;
+    }
+    
+    .user-icon {
+        padding: 8px 12px;
+        font-size: 1.3em;
+    }
+
+    /* LANDING PAGE - HERO */
+    .hero-section {
+        padding: 0 20px;
+        margin-top: 40px;
+        text-align: center; /* Centraliza o texto no mobile */
+    }
+    
+    .hero-content {
+        padding-top: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em; /* Título principal bem menor e impactante */
+        line-height: 1.2;
+    }
+
+    .lorem-text {
+        font-size: 0.9em;
+        margin-bottom: 30px;
+        max-width: none; /* Ocupa a largura total */
+    }
+    
+    .unlock-potential {
+        justify-content: center;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .red-bar {
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        width: 40px; /* A barra vermelha vira um sublinhado centralizado */
+        top: -10px;
+    }
+
+    .dots-indicator {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* DESATIVAÇÃO DE GRÁFICOS FLUTUANTES */
+    .hero-graphics-container {
+        display: none; /* Remove a área gráfica inteira (Imagem + bolhas) para limpar o espaço */
+    }
+    
+    /* CURSOS PAGE */
+    .courses-hero-section {
+        padding: 0 20px 60px;
+    }
+    
+    .hero-title {
+        font-size: 2em;
+    }
+    
+    .courses-grid-section {
+        padding: 0 20px;
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+    .reasons-container {
+        flex-direction: column; 
+        gap: 20px; /* Reduz o espaçamento entre os motivos */
+    }
+    
+    .reason-item {
+        max-width: none; /* Permite que o item ocupe a largura total */
+    }
+
+    /* CTA BOTTOM */
+    .cta-content-box {
+        padding: 30px 15px;
+    }
+    
+    .cta-content-box h2 {
+        font-size: 1.8em;
+    }
+
+    .btn-matricule-se {
+        padding: 12px 30px;
+        font-size: 1em;
+        display: block; /* Ocupa a largura total para ser mais fácil de clicar */
+        margin-top: 20px;
+    }
+    
+    .footer-note {
+        padding: 0 20px 20px;
+    }
+}
